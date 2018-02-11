@@ -9,12 +9,12 @@ const LIB_DIR = path.join(__dirname, '../lib'),
 
 module.exports = {
 
-    entry: './src/nano-data-binding.ts',
+    entry: './src/nano-date-picker.ts',
 
     output: {
         path: LIB_DIR,
         publicPath: '/',
-        filename: 'nano-data-binding.js'
+        filename: 'nano-date-picker.js'
     },
 
     resolve: {
@@ -34,9 +34,9 @@ module.exports = {
 
     },
 
-    plugins: [
-      new UglifyJsPlugin()
-    ],
+    // plugins: [
+    //   new UglifyJsPlugin()
+    // ],
 
     externals: {
         // debug: 'debug' // REVIEW, this seems not to work right now
