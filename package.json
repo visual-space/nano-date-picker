@@ -31,6 +31,7 @@
     "@types/jasmine": "2.8.2",
     "@types/node": "8.5.2",
     "awesome-typescript-loader": "3.4.1",
+    "css-loader": "^0.28.9",
     "debug": "3.1.0",
     "jasmine": "2.8.0",
     "jasmine-core": "2.8.0",
@@ -44,7 +45,10 @@
     "karma-requirejs": "1.1.0",
     "karma-typescript": "3.0.9",
     "karma-webpack": "2.0.9",
+    "node-sass": "^4.7.2",
     "requirejs": "2.3.5",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
     "typescript": "2.6.2",
     "uglifyjs-webpack-plugin": "1.1.4",
     "webpack": "3.10.0"

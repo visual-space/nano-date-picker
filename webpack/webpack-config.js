@@ -29,7 +29,17 @@ module.exports = {
                 use: 'awesome-typescript-loader',
                 include: SRC_DIR,
                 exclude: /node_modules/
-            }
+            },
+            {
+                test: /\.scss$/,
+                use: [{
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader"
+                }, {
+                    loader: "sass-loader"
+                }]
+            },
         ]
 
     },
