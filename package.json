@@ -26,13 +26,15 @@
     "url": "https://github.com/visual-space/nano-date-picker/issues"
   },
   "homepage": "https://github.com/visual-space/nano-date-picker#readme",
+  "dependencies": {
+    "debug": "^3.1.0"
+  },
   "devDependencies": {
     "@types/debug": "0.0.30",
     "@types/jasmine": "2.8.2",
     "@types/node": "8.5.2",
     "awesome-typescript-loader": "3.4.1",
     "css-loader": "^0.28.9",
-    "debug": "3.1.0",
     "jasmine": "2.8.0",
     "jasmine-core": "2.8.0",
     "jasmine-webpack-plugin": "0.1.1",

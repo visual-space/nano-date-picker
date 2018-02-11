@@ -1,3 +1,8 @@
+// Debug
+let Debug = require('debug'), debug = Debug ? Debug('ndp:DatePicker') : () => {}
+debug('Instantiate DatePicker')
+;(window as any).debug = require('debug')
+
 /** Generates date pickers */
 class DatePicker extends HTMLElement {
 
@@ -5,8 +10,15 @@ class DatePicker extends HTMLElement {
 
     constructor( value: number ) {
         super()
-        console.log('Construct DatePicker')
+        debug('Construct DatePicker')
         this.currentDate = value
+
+        // Init
+        this.render()
+    }
+
+    render () {
+        debug('Render DatePicker')
     }
 
 }
