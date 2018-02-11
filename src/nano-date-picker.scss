@@ -1,6 +1,60 @@
-nano-date-picker{
+$border: #ddd;
+$button-color: #4286f4;
+$button-color-hover: #184997;
+
+nano-date-picker {
+
     display: block;
-    background: red;
+    background: white;
     width: 200px;
     height: 200px;
+    margin: 20px;
+    border: solid 1px $border;
+    font-family: 'Arial';
+
+    .actions{
+        height: 30px;
+        display: flex;
+
+        .action{
+            background: $button-color;
+            color: white;
+            border-radius: 6px;
+            padding: 6px;
+            width: 30px;
+
+            &:hover {
+                background: $button-color-hover;
+            }
+        }
+
+        .current.date{
+            flex: 1;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+    .week.header{
+        height: 30px;
+        width: 100%;
+
+        .day{
+            width: calc(100% / 7);
+            padding: 2px;
+            box-sizing: border-box;
+            float: left;
+        }
+    }
+
+    .month.days{
+        width: 100%;
+        height: calc(100% - 60px);
+
+        .day{
+            float:left;
+            padding: 2px;
+        }
+    }
+
 }
