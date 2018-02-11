@@ -102,7 +102,6 @@ class DatePicker extends HTMLElement {
         }
         
         days.forEach( day => header += `<div class="day">${day}</div>` )
-        console.log(days)
         
         return header
     }
